@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="8dp"
-        tools:context=".MainActivity">
+        tools:context=".activities.MainActivity">
     <LinearLayout
             android:id="@+id/ll_encabezado"
             android:layout_width="match_parent"
@@ -20,14 +20,21 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:hint="Ingrese el tipo del pokemon"/>
+                    android:hint="Pokemon type"
+                    android:layout_marginLeft="8dp"
+                    android:drawableStart="@mipmap/icon_pokeball"
+                    android:drawableLeft="@mipmap/icon_pokeball"/>
 
             <Button
                     android:id="@+id/bt_buscar"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Buscar"/>
+                    android:text="search"
+                    android:background="#DF0101"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="8dp"
+                    />
 
     </LinearLayout>
 

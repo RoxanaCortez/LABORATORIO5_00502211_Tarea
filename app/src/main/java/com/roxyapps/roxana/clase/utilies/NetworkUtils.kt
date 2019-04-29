@@ -11,12 +11,13 @@ import java.util.*
 
 object NetworkUtils {
     val POKEMON_API_BASE_URL="https://pokeapi.co/api/v2/"
-    val POKEMON_INFO="type"
+    val POKEMON_TYPE="type"
+    val POKEMON_INFO="pokemon"
 
-    fun buildSearUrl(type: String): URL {
+    fun buildSearUrl(root:String, type: String): URL {
         val builUri = Uri.parse(POKEMON_API_BASE_URL)
             .buildUpon()
-            .appendPath(POKEMON_INFO)
+            .appendPath(root)
             .appendPath(type)
             .build()
 
